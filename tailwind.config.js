@@ -9,8 +9,8 @@ export default {
       'violet-250': '#BD8FF8',
       'violet-300': '#ABBEED',
       'violet-350': '#CED3E9',
-      'violet-50': '#D5CEE9',
-      'violet-50': '#FFFFF'
+      'violet-450': '#D5CEE9',
+      'violet-500': '#FFFFF'
     }
   },
   plugins: []

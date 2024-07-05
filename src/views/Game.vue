@@ -18,7 +18,7 @@ const hands = ref([
 </script>
 
 <template>
-  <main class="bg-violet-300 h-[100vh] p-4">
+  <main class="bg-violet-450 h-[100vh] p-4 flex flex-col justify-center space-y-40">
     <div class="flex justify-center items-center">
       <div class="text-center">
         <img
