@@ -1,4 +1,7 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { useRouter } from 'vue-router'
+const route = useRouter()
+</script>
 
 <template>
   <main
@@ -14,6 +17,7 @@
       </h2>
       <button
         class="geologica bg-violet-100 text-2xl font-bold text-violet-350 rounded-full py-2 px-8 border hover:bg-violet-350 hover:border-violet-100 hover:text-violet-100"
+        @click="route.push('/link')"
       >
         Play
       </button>
