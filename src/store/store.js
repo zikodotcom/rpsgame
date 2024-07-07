@@ -4,7 +4,7 @@ import { createStore } from 'vuex'
 export const store = createStore({
   state() {
     return {
-      backendLink: 'http://192.168.1.103:3000/',
+      backendLink: 'https://rps-game-backend-3ykn.vercel.app/',
       frontLink: 'https://rpsgame-gules.vercel.app/'
     }
   }
