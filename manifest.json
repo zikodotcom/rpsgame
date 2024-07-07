@@ -1,0 +1,17 @@
+{
+    "name": "Rock, Paper, Scissors Game",
+    "short_name": "RPS Game",
+    "description": "A fun and interactive Rock, Paper, Scissors game.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/src/assets/images/icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

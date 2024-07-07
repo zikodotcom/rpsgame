@@ -10,7 +10,7 @@
   -webkit-text-stroke: 1px white;
   text-stroke: 1px white;
 }
-.hands img:hover {
+.hands button img:hover {
   animation: hoverHands 1s infinite 500ms;
 }
 @keyframes hoverHands {
@@ -24,7 +24,7 @@
     transform: translateY(5px);
   }
 }
-.hands img:nth-child(2) {
+.hands button:nth-child(2) {
   position: relative;
   top: -20px;
 }

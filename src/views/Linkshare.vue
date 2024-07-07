@@ -2,19 +2,21 @@
 import { ref, onMounted } from 'vue'
 import { io } from 'socket.io-client'
 import { useRouter } from 'vue-router'
+import { store } from '@/store/store'
 
 const route = useRouter()
 const randomId = ref(0)
 const link = ref('')
-let socket = io('http://localhost:3000/')
+let socket = io(store.state.backendLink)
 
 onMounted(() => {
   randomId.value = new Date().getTime() // Create random id
-  link.value = `http://localhost:5173/game/${randomId.value}` // Set link on the v-model
+  link.value = `${store.state.frontLink}/game/${randomId.value}` // Set link on the v-model
 })
 // Copy event
 const copyClipobard = () => {
-  navigator.clipboard.writeText(link.value)
+  console.log(store.state.frontLink)
+  navigator.clipboard.writeText(`${store.state.frontLink}/game/${randomId.value}`)
 }
 // Check if someone join to the room
 socket.on('room-join-success', (room) => {
